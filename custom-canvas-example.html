@@ -1,12 +1,29 @@
-<body>
-  
-    <br>
-    <canvas id="2" width="400" height="300"></canvas>
-    <br>
-    
-    <script src="bubbly-bg.js"></script>
-    <script>
-        
-        bubbly({canvas: document.getElementById("3")});
-    </script>
-</body>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>bubble-bg demo</title>
+		<meta name="theme-color" content="#222222">
+		<script async type="text/javascript" src="background.js"></script>
+	<style>
+		body, html {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0;
+			padding: 0;
+		}
+		#background {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: -100;
+		}
+	</style>
+	</head>
+
+	<body>
+		<canvas id="background"></canvas>
+	</body>
+</html>
